@@ -42,7 +42,6 @@ layout: default
                 {% for thisTag in page.tags %}
                     {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
                         {% if hasSimilar.size == 0 %}
-                        <h2 id="similar_posts">Similar Posts</h2>
                         <ul>
                         {% endif %}
                         <li class="relatedPost">
@@ -76,7 +75,6 @@ layout: default
                     Content
                 </div>
                 <ul id="content-side" class="content-ul">
-                    <li><a href="#similar_posts">Similar Posts</a></li>
                 </ul>
             </div>
             <!-- 其他div框放到这里 -->
